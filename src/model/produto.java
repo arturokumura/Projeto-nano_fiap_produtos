@@ -18,7 +18,7 @@ public class produto {
 
     public produto(Long id, String nome, String descricao, BigDecimal preco, LocalDateTime datadeCadastro, Categoria categoria) {
         this.setId(id);
-        this.setName(getName());
+
         this.setDescricao(descricao);
         this.setPreco(preco);
         this.setDatadeCadastro(datadeCadastro);
@@ -26,7 +26,7 @@ public class produto {
     }
 
     public produto(  String nome, String descricao, BigDecimal preco, LocalDateTime datadeCadastro, Categoria categoria){
-        this.setName(getName());
+
         this.setDescricao(descricao);
         this.setPreco(preco);
         this.setDatadeCadastro(datadeCadastro);
@@ -38,48 +38,54 @@ public class produto {
         return id;
     }
 
-    public void setId(Long id) {
+    public produto setId(Long id) {
         this.id = id;
+        return this;
     }
 
-    public String getName() {
+    public String getNome() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public produto setNome(String nome) {
+        this.name = nome;
+        return this;
     }
 
     public String getDescricao() {
         return descricao;
     }
 
-    public void setDescricao(String descricao) {
+    public produto setDescricao(String descricao) {
         this.descricao = descricao;
+        return this;
     }
 
     public BigDecimal getPreco() {
         return preco;
     }
 
-    public void setPreco(BigDecimal preco) {
+    public produto setPreco(BigDecimal preco) {
         this.preco = preco;
+        return this;
     }
 
     public LocalDateTime getDatadeCadastro() {
         return datadeCadastro;
     }
 
-    public void setDatadeCadastro(LocalDateTime datadeCadastro) {
+    public produto setDatadeCadastro(LocalDateTime datadeCadastro) {
         this.datadeCadastro = datadeCadastro;
+        return this;
     }
 
     public Categoria getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(Categoria categoria) {
+    public produto setCategoria(Categoria categoria) {
         this.categoria = categoria;
+        return this;
     }
 
     @Override

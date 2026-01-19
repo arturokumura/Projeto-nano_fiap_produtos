@@ -1,9 +1,10 @@
+import model.Categoria;
+import model.produto;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Locale;
 import java.util.Scanner;
-import model.Categoria;
-import model.produto;
 public class Main {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
@@ -16,7 +17,7 @@ public class Main {
 
         produto produto = new produto();
         produto.setId(1l);
-        produto.setName("Kindle");
+        produto.setNome("Kindle");
         produto.setDescricao("e-reader");
         produto.setDatadeCadastro(LocalDateTime.now());
         produto.setCategoria(categoria);
