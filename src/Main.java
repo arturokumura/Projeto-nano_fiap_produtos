@@ -22,7 +22,7 @@ public class Main {
         produto.setCategoria(categoria);
         produto.setPreco(BigDecimal.valueOf(800));
 
-        System.out.println("Categoria " + categoria);
-        System.out.println("Produto " + produto);
+        System.out.println("Categoria: " + categoria);
+        System.out.println("Produto: " + produto);
     }
 }
