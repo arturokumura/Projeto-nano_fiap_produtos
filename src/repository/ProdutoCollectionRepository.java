@@ -9,8 +9,10 @@ import java.util.List;
 import java.util.Vector;
 
 public class ProdutoCollectionRepository {
-    private static List<produto> produtos;
-
+    private static List<produto> produtos= new Vector<>();
+    public static List<produto> findAll() {
+        return produtos;
+    }
     static {
         produtos = new Vector<>();
     produto kindle = new produto();
