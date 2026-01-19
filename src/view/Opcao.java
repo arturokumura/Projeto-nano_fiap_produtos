@@ -9,6 +9,7 @@ public enum Opcao {CADASTRAR_CATEGORIA(1, "Cadastrar Categoria"),
     CONSULTAR_PRODUTO_POR_ID(4, "Consultar Produto Por ID"),
     CONSULTAR_PRODUTO_POR_CATEGORIA(5, "Consultar Produto Por Categoria"),ENCERRAR_SISTEMA(6, "Encerrar Sistema");
 
+
     private String nome;
     private int id;
 
