@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-    public class ProdutoView {
+public class ProdutoView {
         public static produto select() {
             produto ret = (produto) JOptionPane.showInputDialog(
                 null,
@@ -102,7 +102,21 @@ import java.time.LocalDateTime;
         JOptionPane.showMessageDialog(null, produto.toString());
         }
         public static void sucesso() {
-        }
+        JOptionPane.showMessageDialog(null, "Produto salvo com sucesso!");
     }
+    public static void sucesso(produto produto) {
+        System.out.println(produto);
+        JOptionPane.showMessageDialog(null,
+                "Produto " +produto.getNome().toUpperCase() + " salvo com sucesso!");}
+
+    public static void show(produto p) {
+        System.out.println(p);
+        String produtoString = String.format("PRODUTO: " + p.getNome() +
+                System.lineSeparator() + "DESCRIÇÃO: " + p.getDescricao() +
+                System.lineSeparator() + "CATEGORIA: " + p.getCategoria().toString() +
+                System.lineSeparator() + "PREÇO: %,.2f", p.getPreco());
+        JOptionPane.showMessageDialog(null, produtoString);}}
+
+
 
 

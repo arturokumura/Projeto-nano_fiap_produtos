@@ -1,5 +1,6 @@
 package repository;
 
+import model.Categoria;
 import model.produto;
 
 import java.math.BigDecimal;
@@ -47,4 +48,8 @@ public static produto findById(Long id) {
             .findFirst()
             .orElse(null);
 }
+
+    public static List<produto> findByCategoria(Categoria categoria) {
+        return List.of();
     }
+}
