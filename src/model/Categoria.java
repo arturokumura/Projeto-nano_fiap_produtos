@@ -49,7 +49,7 @@ public class Categoria {
 
     @Override
     public String toString() {
-        return name.toUpperCase()
+        return name.toUpperCase();
     }
 }
 
