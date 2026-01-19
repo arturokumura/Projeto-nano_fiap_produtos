@@ -1,13 +1,28 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.Locale;
+import java.util.Scanner;
+import model.Categoria;
+import model.produto;
+public class Main {
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+        Categoria categoria = new Categoria();
+
+        categoria.setId(1l);;
+        categoria.setName("Eletronicos");
+
+        produto produto = new produto();
+        produto.setId(1l);
+        produto.setName("Kindle");
+        produto.setDescricao("e-reader");
+        produto.setDatadeCadastro(LocalDateTime.now());
+        produto.setCategoria(categoria);
+        produto.setPreco(BigDecimal.valueOf(800));
+
+        System.out.println("Categoria " + categoria);
+        System.out.println("Produto " + produto);
     }
 }
